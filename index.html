@@ -3,13 +3,14 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
     <title>Unity Web Player | exodia</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width=394 height=768 tabindex="-1"></canvas>
+      <canvas id="unity-canvas" width=1080 height=1920 tabindex="-1""></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
@@ -95,7 +96,13 @@
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
         // canvas.style.width = "394px";
         // canvas.style.height = "768px";
-       const aspectRatio = 394 / 768;
+
+        var meta = document.createElement('meta');
+        meta.name = 'viewport';
+        meta.content = 'width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, shrink-to-fit=yes';
+        document.getElementsByTagName('head')[0].appendChild(meta);
+        config.devicePixelRatio = 2;
+        const aspectRatio = 394 / 768;
         canvas.style.height = "97vh";
         canvas.style.width = `calc(97vh * ${aspectRatio})`;
         
