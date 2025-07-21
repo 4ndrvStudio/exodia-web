@@ -31,7 +31,7 @@ body { padding: 0; margin: 0 }
 }
 #unity-logo { 
     position: absolute; 
-    top: 344px; 
+    bottom: 50%; 
     left: 50%;
     transform: translate(-50%, 58%);
     width: 369px; 
@@ -45,7 +45,7 @@ body { padding: 0; margin: 0 }
     position: absolute;
     width: 256px;
     height: 16px;
-    bottom: 200px;
+    bottom: 18%;
     left: 50%;
     transform: translateX(-50%);
     background: #1C1917;
@@ -82,12 +82,11 @@ body { padding: 0; margin: 0 }
 #banner-1 {
     position: absolute;
     background: url('banner_nowhiteline_1.png') no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
     bottom: 0;
     left: 0;
-    width: 246px;
-    transform: translate(0, 0);
-    height: 176px;
+    width: 47%;
+    height: 16%;
 }
 
 #banner-2 {
@@ -96,9 +95,8 @@ body { padding: 0; margin: 0 }
     background-size: 100% 100%;
     bottom: 0;
     right: 0px;
-    width: 263px;
-    transform: translate(0, 0);
-    height: 189px;
+    width: 48%;
+    height: 18%;
 }
 
 
